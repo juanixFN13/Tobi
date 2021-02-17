@@ -1,0 +1,246 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+a, li {
+    text-decoration: none;
+    list-style: none;
+}
+.nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 3px solid rgb(255, 164, 80);
+    background: rgb(245, 184, 127);
+    height: 50px;
+    position: sticky;
+    top: 0;
+    z-index: 2000;
+}
+.nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav ul li {
+    margin: 0 10px;
+}
+.nav ul li a {
+    color: #000;
+    transition: .3s ease;
+}
+.nav ul li a:hover {
+    color: rgb(255, 255, 255);
+}
+/*SLIDER*/
+.hola {
+	height: 100%;
+	width: 100%;
+	background: red;
+}
+.container-slider {
+	width: 100%;
+    height: 100vh;
+	overflow: hidden;
+	position: relative;
+    background: blue;
+}
+.slider {
+	display: flex;
+	width: 400%;
+	height: 100%;
+	margin-left: -100%;
+}
+.slider-section {
+	width: 100%;
+    height: 100%;
+}
+.slider-img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.slider-btn {
+	position: absolute;
+	width: 40px;
+	height: 40px;
+	background: rgb(0,0,0,.7);
+	top: 50%;
+	transform: translateY(-50%);
+	font-size: 30px;
+	font-weight: bold;
+	font-family: monospace;
+	text-align: center;
+	border-radius: 50%;
+	cursor: pointer;
+	color: #fff;
+}
+.slider-btn:hover {
+	background: #000;
+}
+.slider-btn-left {
+	left: 10px;
+}
+.slider-btn-right {
+	right: 10px;
+}
+
+/*MENU*/
+#menu {
+    height: 100vh;
+}
+.nombre-menu {
+    background: rgb(240, 90, 20);
+    height: 45px;
+    display: flex;
+    align-items: center;
+}
+.nombre-menu h2 {
+    transform: translateX(250px);
+}
+.content {
+    width: 100%;
+    height: 100%;
+}
+.list-menu {
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+}
+.list-menu h3 {
+    cursor: pointer;
+    margin: 20px;
+    border-bottom: solid 3px transparent;
+    transition:.3s ease;
+}
+.list-menu h3:hover {
+    border-bottom: solid 3px rgb(240, 90, 20);
+}
+.content-product {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+}
+.product {
+    margin: 30px auto;
+    height: 70vh;
+    width: 1000px;
+    border: solid 5px #000;
+}
+.product img {
+    width: 100%;
+    height: 100%;
+}
+/*Sobre Nosotros*/
+#sobre-nosotros {
+    height: 50vh;
+    z-index: -100;
+}
+.nombre-sobre {
+    background: rgb(240, 90, 20);
+    height: 45px;
+    display: flex;
+    align-items: center;
+}
+.nombre-sobre h2 {
+    transform: translateX(250px);
+}
+.main-sobre {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content-sobre {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+}
+.items {
+    margin: 0 20px;
+    transition: .6s;
+    padding: 20px;
+}
+.items:hover {
+    box-shadow: 0 0 15px 2px rgba(0, 0, 0, .7);
+    cursor: pointer;
+}
+.content-sobre h2 {
+    border-bottom: solid 4px rgb(240, 90, 20);
+}
+.content-sobre p {
+    margin-top: 10px;
+}
+/*UBICACION Y CONTACTO*/
+#ubicacion {
+    height: 80vh;
+}
+.content-ubicacion {
+    height: 100%;
+}
+.nombre-ubicacion {
+    display: flex;
+    align-items: center;
+    height: 45px;
+    background: rgb(240, 90, 20);
+    margin-top: 30px;
+}
+.nombre-ubicacion h2{
+    transform: translateX(250px);
+}
+.body-ubicacion {
+    margin-top: 30px;
+    display: flex;
+    height: 100%;
+    justify-content: space-evenly;
+}
+.ubicacion {
+    width: 70%;
+    height: 100%;
+}
+.ubicacion h3 {
+    border-bottom: 3px solid rgb(240, 90, 20);
+    
+    margin-left: 20px;
+}
+.ubicacion img {
+    width: 900px;
+    height: auto;
+    margin-top: 20px;
+    transform: translateX(10%);
+}
+.contacto {
+    width: 30%;
+    height: 100%;
+}
+.body-contacto {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-left: solid 5px rgb(240, 90, 20);
+    background: rgb(240, 133, 83);
+    padding: 20px;
+}
+.contacto-llamada {
+    padding: 10px;
+}
+.contacto h3 {
+    border-bottom: 3px solid rgb(240, 90, 20);
+}
+.redes-items{
+    display: flex;
+    justify-content: space-around;
+}
+.redes-items a img {
+    width: 40px;
+    height: 40px;
+    margin-top: 15px;
+}
+/*VOLVER*/
